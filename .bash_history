@@ -116,3 +116,23 @@ python ex8.py
 vi ex8.py
 python ex8.py
 cat > ex9.py
+vi ex36.py
+python
+vi boss_fight.py
+python boss_fight.py
+pydoc break()
+pydoc break
+vi boss_fight.py
+python boss_fight.py
+vi boss_fight.py
+python boss_fight.py
+vi boss_fight.py
+python boss_fight.py
+vi boss_fight.py
+python boss_fight.py
+vi boss_fight.py
+python boss_fight.py
+qwerty
+quit() q
+q
+exit

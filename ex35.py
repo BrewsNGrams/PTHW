@@ -1,4 +1,4 @@
-# A simple text game with 3 rooms
+# A simple text game with 4 rooms
 
 # allows the program access to the function 'exit' which
 # is found in the 'sys' package
