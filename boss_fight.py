@@ -2,7 +2,7 @@ import random
 from sys import exit
 
 player = 10
-boss = 15
+boss = 18
 
 moves = ['block', 'high attack', 'mid attack', 'low attack']
 
@@ -77,8 +77,11 @@ while player > 0 and boss > 0:
         print "Nobody moves like that!"
         print "Try again!"
 
-if boss <= 0:
+if boss <= 0 and player > 0:
     print "You win!"
+elif boss <= 0 and player <= 0:
+    print "Awww, you died together, how sweet."
+    print "Game Over"
 else:
     print "Game Over"
 

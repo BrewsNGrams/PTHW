@@ -136,3 +136,38 @@ qwerty
 quit() q
 q
 exit
+git inti
+git init
+git add --all
+git commit -m ["fixed long if/and moves[] statement"
+git commit -m ["fixed long if/and moves[] statement"]
+git push origin master
+sudo apt install cowsay
+sudo apt install cmatrix
+cmatrix
+telnet towl.blinkenlights.nl
+sudo apt install telnet
+telnet towel.blinkenlights.nl
+sudo apt install espeak
+espeak "Hello Clarice"
+espeak "Here's Johnny!"
+espeak "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
+espeak "What are you doing Hal?"
+espeak "what are you doing?"
+espeak "may the force be with you"
+espeak "ok"
+python boss_fight.py
+vi boss_fight.py
+python boss_fight.py
+vi boss_fight.py
+pyton boss_fight.py
+python boss_fight.py
+python boss fight.py
+python boss_fight.py
+python boss_fight
+pythonboss_fight.py
+python boss_fight.py
+vi boss_fight.py
+python boss_fight.py
+quit
+exit
