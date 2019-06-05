@@ -171,3 +171,45 @@ vi boss_fight.py
 python boss_fight.py
 quit
 exit
+python boss_fight.py
+git init
+git commit -m ["evened up match"]
+git add --all
+git commit -m ["evened up match"]
+vi ex36.py
+git push origin master
+git config credential.helper store
+git pull
+git config --global credential.helper store
+vi ex36.py
+q
+exit
+python boss_fight.py
+vi ex25.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.poy
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
