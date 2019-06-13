@@ -61,13 +61,13 @@ def boss_fight(player_name):
             print "Boss attacked with %s" % b_attack
             boss = boss - 4
             player = player - 5
-            print "Boss life: %d" % b_attack
+            print "Boss life: %d" % boss
             print "%s life: %d" % (player_name, player)
         elif p_attack == "mid" and b_attack == "low":
             print "Boss attacked with %s" % b_attack
             boss = boss - 4
             player = player - 3
-            print "Boss life: %d" % b_attack
+            print "Boss life: %d" % boss
             print "%s life: %d" % (player_name, player)
         elif p_attack == "low" and b_attack == "block":
             print "Boss threw up a %s" % b_attack
@@ -109,10 +109,12 @@ def palm_tree_room():
     print "a good coconut but right off the tree they are rather difficult."
     print "to get open. Do you go for the kiwi or the coconut?"
 
-    fruit_choice = raw_input('>')
     hungry = True
 
     while hungry == True:
+
+        fruit_choice = raw_input('>')
+
         if fruit_choice == 'kiwi':
             print "At your first bite, the sweetness washes over your tongue."
             print "Then suddenly, the food turns to a wet, slimy mush."
@@ -122,7 +124,8 @@ def palm_tree_room():
             print "has turned to a rotting crab apple. You begin to feel"
             print "quite dizzy and light-headed. You realize this is the"
             print "end. Should've done the work for the coconut."
-            print "Game OVer"
+            print "Game Over"
+            exit(0)
         elif fruit_choice == 'coconut':
             print "You decide to do the work for the coconut. Unfortunately"
             print "you have nothing on you to crack open the delicious"
@@ -136,10 +139,14 @@ def palm_tree_room():
             print "young one, what makes you worthy of such a tremendous"
             print "weapon?' Racking your brain, you come up with three"
             print "possible responses\n1. You volunteer at homeless shelters"
-            print "2. You own a yacht\n 3. COCONUT!"
+            print "2. You own a yacht\n3. COCONUT!"
 
-            worthiness = raw_input('>')
+            heavy = True
+
             while heavy == True:
+
+                worthiness = raw_input('>')
+
                 if worthiness == '1':
                     print "'Liar!! You gave a homeless guy a half eaten"
                     print "sandwhich once and only because you didn't"
@@ -181,7 +188,11 @@ def palm_tree_room():
                         print "single room paradise. Well played!"
                         exit(0)
                     else:
-                        print "Does not compute"
+                        print"Does not compute"
+
+        else:
+            print"Does not compute."
+            print "Try again"
 
 
 def mansion_room():
@@ -206,12 +217,13 @@ def entrance_hall():
     for i in opening:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.08)
+        time.sleep(0.04)
 
-    door_choice = raw_input('>')
     doors_closed = True
 
     while doors_closed == True:
+
+        door_choice = raw_input('>')
         if door_choice == 'left':
             palm_tree_room()
             doors_closed = False
