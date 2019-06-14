@@ -1,4 +1,5 @@
 from sys import *
+import sys
 
 def entrance_hall():
 	print "You find yourself in a dark hallway"
@@ -22,6 +23,12 @@ def entrance_hall():
 			print "That's not an option"
 			print "Try again"
 			
+def beep():
+	from pygame import mixer
+	mixer.init() #you must initialize the mixer
+	alert = mixer.Sound('bell.wav')
+	alert.play()
+	
 def bobs_room():
 	print "You open the door and find yourself in a quaint little burger joint"
 	print "The proprietor of the establishment runs over to you and says,"
@@ -49,8 +56,18 @@ def bobs_room():
 			beg = raw_input('>')
 			if beg =='ok' or beg == 'fine':
 				print thanks
+				coverage()
 				choice_made = True
 			elif beg == 'no':
+				print "Bob resigns to his fate and offers you a burger which"
+				print "you graciously accept. Unfortunately, while trying to"
+				print "cook your burger. Bob gets distracted by Linda and"
+				print "the kids. The outside is cooked perfectly but the"
+				print "inside not so much. As famished as you are, you devour"
+				print "it, not noticing in the slightest how undercooked the"
+				print "middle is. You head back home, oblivious to the virus"
+				print "destroying you, slowly, inside. Three days later, you"
+				print "die of mad cow disease."
 				print "GAME OVER"
 				choice_made = True
 			else:
@@ -58,7 +75,14 @@ def bobs_room():
 				print "Try again!"
 				
 def coverage():
-	print "A game involving Linda and the kids"
+	print "Bob introduces you to the family and heads on his way. The minute"
+	print "he's gone, the kids ask you if you want to play a game., 'Sure'"
+	print "you unwittingly reply. Gene excitedly grabs his keyboard. 'I am "
+	print "going to make some AHMAZIING Windows sounds with my keyboard and you"
+	print "will have to guess what they mean. READY?!!' You nod. 'Here comes"
+	print "number one! (number 2 as well after that chili bowl.)'"
+	
+	beep()
 
 def mansion_room():
 	print "You suddenly find yourself atop 55 Central Park West"
