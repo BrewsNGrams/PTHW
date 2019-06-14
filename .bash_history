@@ -213,3 +213,54 @@ vi ex36.py
 python ex36.py
 vi ex36.py
 python ex36.py
+vi ex36.py
+git init
+git add --all
+git commit -m ["broken while loop"]
+git push origin master
+vi ex36.py
+vi ex35.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+python ex36.py
+exit
+git init
+git pull
+git commit -m ["start over"]
+git pull
+git pull -ow
+git pull --autostash
+git pull -f
+cat > mansion_room.py
+vi mansion_room.py
+vi ex16.py
+vi ex17.py
+vi ex35.py
+python ex17.py ex35.py mansion_room.py
+vi mansion_room.py
+python mansion_room.py
+vi mansion_room.py
+python mansion_room.py
+exit() "
+
+exit
+vi mansion_room.py
+python mansion_room.py
+python ex36.py
+vi ex36.py
+python ex36.py
+vi ex36.py
+quit
+exit

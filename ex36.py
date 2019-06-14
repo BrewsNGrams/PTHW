@@ -61,13 +61,13 @@ def boss_fight(player_name):
             print "Boss attacked with %s" % b_attack
             boss = boss - 4
             player = player - 5
-            print "Boss life: %d" % b_attack
+            print "Boss life: %d" % boss
             print "%s life: %d" % (player_name, player)
         elif p_attack == "mid" and b_attack == "low":
             print "Boss attacked with %s" % b_attack
             boss = boss - 4
             player = player - 3
-            print "Boss life: %d" % b_attack
+            print "Boss life: %d" % boss
             print "%s life: %d" % (player_name, player)
         elif p_attack == "low" and b_attack == "block":
             print "Boss threw up a %s" % b_attack
