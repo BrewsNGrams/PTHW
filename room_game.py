@@ -7,9 +7,9 @@ def entrance_hall():
 	print "Approaching, you see two doors, to the left and right respectively"
 	print "The left door looks like the entrance to a quaint little diner"
 	print "The right door looks like a the front door to a NYC mansion."
-	
+
 	choice_made = False
-	
+
 	while choice_made == False:
 		print "Which door will you chose?"
 		door_choice = raw_input('>')
@@ -22,13 +22,11 @@ def entrance_hall():
 		else:
 			print "That's not an option"
 			print "Try again"
-			
-def beep():
-	from pygame import mixer
-	mixer.init() #you must initialize the mixer
-	alert = mixer.Sound('bell.wav')
-	alert.play()
-	
+
+def logon():
+	from playsound import playsound
+	playsound("DING.WAV")
+
 def bobs_room():
 	print "You open the door and find yourself in a quaint little burger joint"
 	print "The proprietor of the establishment runs over to you and says,"
@@ -36,16 +34,16 @@ def bobs_room():
 	print "are driving me nuts!! I love them, I do but I need a break. Can you"
 	print "cover me for an hour?' Will you help Bob?"
 	choice_made = False
-	
+
 	while choice_made == False:
 		cover_shift = raw_input('>')
-		
+
 		line1 = "Thank you so much!! Linda and Gene love music,"
 		line2 = "Louise is a schemer, and Tina loves... well... butts"
 		line3 =	"she loves butts... I don't know... do with that what"
 		line4 =	"you can. Actually, don't. OH god, what am I gonna do with"
-		line5 = "her... Anyway. Good luck. I'll be back in an hour."
-		
+		line5 = "her... Anyway. Good luck. I'll be back in an hour.\n"
+
 		thanks = "%s\n%s\n%s\n%s\n%s" % (line1, line2, line3, line4, line5)
 		if cover_shift == 'yes':
 			print thanks
@@ -73,7 +71,7 @@ def bobs_room():
 			else:
 				print "Your not making any sense!!"
 				print "Try again!"
-				
+
 def coverage():
 	print "Bob introduces you to the family and heads on his way. The minute"
 	print "he's gone, the kids ask you if you want to play a game., 'Sure'"
@@ -81,9 +79,22 @@ def coverage():
 	print "going to make some AHMAZIING Windows sounds with my keyboard and you"
 	print "will have to guess what they mean. READY?!!' You nod. 'Here comes"
 	print "number one! (number 2 as well after that chili bowl.)'"
-	
-	beep()
 
+	logon()
+
+	choice_made = False
+	print "Was that the Windows logon sound or logoff sound?!"
+	while choice_made == False:
+		guess_one = raw_input('>')
+
+		if guess_one == 'logon':
+			print "CORRRRECT!! ON TO THE NEXT QUESTION!!"
+			choice_made = True
+		elif guess_one == "logoff":
+			print "Wrong again you imitation Gene Kelly!!"
+			choice_made = True
+		else:
+			print "Watch that potty mouth of yours and try again!"
 def mansion_room():
 	print "You suddenly find yourself atop 55 Central Park West"
 	print "In front of you is an elaborate alter of stone, guarded"
@@ -93,9 +104,9 @@ def mansion_room():
 	print "tallest heels you've ever seen. She looks directly into your"
 	print "eyes and introduces herself. 'I am the great Gozer! In order"
 	print "to move on, you must prove yourself worthy. Answer me this:"
-	
+
 	choice_made = False
-	
+
 	while choice_made == False:
 		print "Are you a god?'"
 		god_status = raw_input('>')
@@ -113,17 +124,17 @@ def mansion_room():
 		else:
 			print "I wouldn't say that. She might get mad"
 			print "Try again"
-			
+
 def prove_god():
 	print "'Then prove it!!' Do you use your cosmic energies and indomitable"
 	print "will to manifest a yet to exist lifeform or do that thing where it"
 	print "looks like you can remove your thumb and then put it back on?"
-	
+
 	choice_made = False
 	while choice_made == False:
 		print "New lifeform or thumb trick?"
 		proof= raw_input('>')
-	
+
 		if 'lifeform' in proof:
 			print "You attempt to manipulate the very fabric of the universe to"
 			print "align with your resolve. Unfortunately, your a dumb mortal"
@@ -148,7 +159,7 @@ def prove_god():
 			choice_made = True
 		else:
 			print "You can't do that. Try again."
-			
+
 
 def meme_room():
 	print "You walk onto the stage of an ongoing game show"
