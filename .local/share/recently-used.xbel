@@ -29,7 +29,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/cooneyaj/room_game.py" added="2019-06-12T13:44:43Z" modified="2019-06-14T11:52:58Z" visited="2019-06-12T13:44:43Z">
+  <bookmark href="file:///home/cooneyaj/room_game.py" added="2019-06-12T13:44:43Z" modified="2019-06-15T13:19:52Z" visited="2019-06-12T13:44:43Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-python"/>
@@ -37,7 +37,7 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-14T11:52:58Z" count="60"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2019-06-15T13:19:52Z" count="61"/>
         </bookmark:applications>
       </metadata>
     </info>
