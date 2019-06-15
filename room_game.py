@@ -24,10 +24,6 @@ def entrance_hall():
 			print "That's not an option"
 			print "Try again"
 
-def logon():
-	from playsound import playsound
-	playsound("DING.WAV")
-
 def bobs_room():
 	print "You open the door and find yourself in a quaint little burger joint"
 	print "The proprietor of the establishment runs over to you and says,"
@@ -74,7 +70,7 @@ def bobs_room():
 				print "Try again!"
 
 def question_one():
-	logon()
+	playsound("Windows Logon Sound.wav")
 
 	choice_made = False
 	print "Was that the Windows logon sound or logoff sound?!"
@@ -98,21 +94,24 @@ def question_two():
 	playsound("TADA.WAV")
 
 	choice_made = False
-	chances = 0
+	chances = 3
 
-	while choice_made == False and chances < 3:
+	while choice_made == False and chances > 0:
 		guess_two = raw_input('>')
 
 		if guess_two == 'tada':
 			print "You cheated!! No one knows that!! Next question!"
-			question_three()
 			choice_made = True
 		else:
 			print "Nope, try again!"
-			print chances
-			chances = chances + 1
+			chances = chances - 1
+			print "You've got %d chances left!" % chances
 
-	print "You LOSE!!! GAME OVER LOSER!!"
+	if guess_two == 'tada':
+		question_three()
+	else:
+		print "WRONG!!! GAME OVER LOSER!!"
+
 
 def question_three():
 	print "Here would be question three"
@@ -123,7 +122,7 @@ def coverage():
 	print "you unwittingly reply. Gene excitedly grabs his keyboard. 'I am "
 	print "going to make some AHMAZIING Windows sounds with my keyboard and you"
 	print "will have to guess what they mean. READY?!!' You nod. 'Here comes"
-	print "number one! (number 2 as well after that chili bowl.)'"
+	print "number one! (number 2 as well after that chili bowl.)'\n"
 
 	question_one()
 
