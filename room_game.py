@@ -1,5 +1,6 @@
 from sys import *
 import sys
+from playsound import playsound
 
 def entrance_hall():
 	print "You find yourself in a dark hallway"
@@ -72,14 +73,7 @@ def bobs_room():
 				print "Your not making any sense!!"
 				print "Try again!"
 
-def coverage():
-	print "Bob introduces you to the family and heads on his way. The minute"
-	print "he's gone, the kids ask you if you want to play a game., 'Sure'"
-	print "you unwittingly reply. Gene excitedly grabs his keyboard. 'I am "
-	print "going to make some AHMAZIING Windows sounds with my keyboard and you"
-	print "will have to guess what they mean. READY?!!' You nod. 'Here comes"
-	print "number one! (number 2 as well after that chili bowl.)'"
-
+def question_one():
 	logon()
 
 	choice_made = False
@@ -90,11 +84,50 @@ def coverage():
 		if guess_one == 'logon':
 			print "CORRRRECT!! ON TO THE NEXT QUESTION!!"
 			choice_made = True
+			question_two()
 		elif guess_one == "logoff":
 			print "Wrong again you imitation Gene Kelly!!"
 			choice_made = True
 		else:
 			print "Watch that potty mouth of yours and try again!"
+
+def question_two():
+	print "What is the proper name for this classic Windows chime?!"
+	print "You get 3 chances!!"
+
+	playsound("TADA.WAV")
+
+	choice_made = False
+	chances = 0
+
+	while choice_made == False and chances < 3:
+		guess_two = raw_input('>')
+
+		if guess_two == 'tada':
+			print "You cheated!! No one knows that!! Next question!"
+			question_three()
+			choice_made = True
+		else:
+			print "Nope, try again!"
+			print chances
+			chances = chances + 1
+
+	print "You LOSE!!! GAME OVER LOSER!!"
+
+def question_three():
+	print "Here would be question three"
+
+def coverage():
+	print "Bob introduces you to the family and heads on his way. The minute"
+	print "he's gone, the kids ask you if you want to play a game., 'Sure'"
+	print "you unwittingly reply. Gene excitedly grabs his keyboard. 'I am "
+	print "going to make some AHMAZIING Windows sounds with my keyboard and you"
+	print "will have to guess what they mean. READY?!!' You nod. 'Here comes"
+	print "number one! (number 2 as well after that chili bowl.)'"
+
+	question_one()
+
+
 def mansion_room():
 	print "You suddenly find yourself atop 55 Central Park West"
 	print "In front of you is an elaborate alter of stone, guarded"
