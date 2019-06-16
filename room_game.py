@@ -114,7 +114,43 @@ def question_two():
 
 
 def question_three():
-	print "Here would be question three"
+	print "This one's a doozy, hope you brought your big boy boxer briefs!!"
+	print "Name THIS sound"
+
+	playsound("Windows Hardware Insert.wav")
+
+	choice_made = False
+
+	while choice_made == False:
+		guess_three = raw_input('>')
+
+		if guess_three == 'device input':
+			print "CURSES!!! Nerds will rule the world!! And I will serve them"
+			print "tacos on Tuesdays AND Thursdays!! You have proven yourself"
+			print "worthy. Here's your prize.. ummm... i've got something here"
+			print "somewhere... ah... the bathroom key!! Use it wisely (and not"
+			print "anytime between 3 and 3:15 on weekday afternoons. That's"
+			print "dad's 'special time'. You take the key hesitantly but begin"
+			print "to examine it once it's in your hands. You notice a keychain"
+			print "on it with the name 'Dr Emmit Brown' on it. You ask Gene if"
+			print "he knows who that is and he replies ' I don't know an Emmit"
+			print "Brown but I do know I emit brown often in that room'. You"
+			print "let out a frustrated sigh. You spend the next 1/2 hr"
+			print "listening to Louise's schemes, Tina's butt dreams, and"
+			print "several of Linda's holiday songs. Finally, Bob returns"
+			print "'How were they?' You recount your time with them to Bob and"
+			print "he apologizes and offers you a free lunch. You enjoy his new"
+			print "'Bake it on the Run' burger and wash it down with a cold"
+			print "cold one. After finishing you head towards the bathroom door"
+			print "key in hand ready for what's next"
+
+			doc_browns_lab()
+			choice_made = True
+		else:
+			print "HaH. Ametuer. Try Again!!"
+
+def doc_browns_lab():
+	print "Back to the Future reference room"
 
 def coverage():
 	print "Bob introduces you to the family and heads on his way. The minute"
