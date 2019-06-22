@@ -143,14 +143,16 @@ def question_three():
 			print "'Bake it on the Run' burger and wash it down with a cold"
 			print "cold one. After finishing you head towards the bathroom door"
 			print "key in hand ready for what's next"
-
 			doc_browns_lab()
 			choice_made = True
+		elif guess_three == 'play again':
+			print "You need to work on your listening skills"
+			playsound("Windows Hardware Insert.wav")
 		else:
 			print "HaH. Ametuer. Try Again!!"
 
 def doc_browns_lab():
-	print "Back to the Future reference room"
+	print "Doc Brown's Lab"
 
 def coverage():
 	print "Bob introduces you to the family and heads on his way. The minute"

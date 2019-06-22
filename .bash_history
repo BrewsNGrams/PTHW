@@ -264,3 +264,100 @@ python ex36.py
 vi ex36.py
 quit
 exit
+sudo apt upgrade apt update
+sudo apt install atom
+sudo apt install notepad++
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt install libreoffice
+sudo apt purge libreoffice
+help
+help sudo
+info sudo
+help help
+help wait
+help install
+info install
+info python
+help python
+python
+sudo snap install sublime-text
+sudo apt install sublime-text
+sudo apt update
+sudo apt update --all
+sudo apt update -all
+sudo apt update
+sudo apt-get update
+sudo apt-get atom
+sudo apt get atom
+help sanp
+help snap
+info snap
+info apt
+help apt
+sudo apt install atom --classic
+sudo snap install atom --classic
+sudo apt update
+sudo apt-get update && sudo apt-get upgrade
+sudo snap install sublime-text
+sudo apt install sublime-text
+sudo apt-get sublime-text
+sudo apt-get sublime
+sudo apt-get install sublime-text
+sudo apt-get install atom --classic
+sudo apt-get install atom
+sudo apt-get install vim
+sudo apt-get install gedit
+python room_game.py
+dir]
+dir
+python room_game.py
+python
+python room_game.py
+pythoh room_game.py
+python room_game.py
+python room
+python room_game.py
+python game_room.py
+python room_game.py
+python room
+-python room_game.py
+python room_game.py
+git init
+git add --all
+git commit -m ["room_game new build"]
+git push origin master
+git pull master origin
+git pull
+git status
+git add .
+git commit -m "Fixed merge conflict ex36"
+git push origin master
+python room_game.py
+python
+python room_game.py
+sudo apt install winsound
+sudo apt-get install python-pygame
+python room_game.py
+git init
+git add --all
+git commit -m "coverage() progress. Sound?"
+git push origin master
+room_game.py
+python room_game.py
+git pull
+python room_game.py
+pip install playsound
+sudo apt install python-pip
+pip install playsound
+python room_game.py
+sudo add-apt-repository ppa:gstreamer-developers/ppa        
+sudo apt-get install gstreamer1.0*
+python room_game.py
+git add --all
+git commit -m "weird error when playing sound on chromebook"
+git push origin master
+python
+git init
+git pull
+python room_game.py
+python Math_Quiz.py
